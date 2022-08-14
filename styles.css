@@ -9,6 +9,7 @@ body {
   grid-template-areas: "header header header header";
   justify-content: center;
   margin-top: 15em;
+  gap: 5px;
 }
 
 .display {
