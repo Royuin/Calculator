@@ -16,6 +16,9 @@ body {
   background-color: white;
   grid-area: header;
   border-radius: 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .button {
