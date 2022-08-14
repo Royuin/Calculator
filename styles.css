@@ -19,4 +19,9 @@ body {
 
 .button {
   font-size: 2.5em;
+  border-radius: 8px;
+}
+
+.display {
+  border-radius: 8px;
 }
