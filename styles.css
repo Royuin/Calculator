@@ -4,7 +4,8 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(5, 150px);
 }
 
 .display {
