@@ -21,3 +21,5 @@ function operate(func, a, b) {
 let displayValue = 0;
 
 const display = document.querySelector(".display");
+
+display.textContent = displayValue;
