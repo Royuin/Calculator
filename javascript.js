@@ -53,3 +53,13 @@ btn2.addEventListener("click", () => {
   displayValue += "2";
   display.textContent = displayValue;
 });
+
+const btn3 = document.querySelector(".button3");
+btn3.addEventListener("click", () => {
+  if (displayValue === "0") {
+    displayValue = "";
+  }
+
+  displayValue += "3";
+  display.textContent = displayValue;
+});
