@@ -24,6 +24,16 @@ const display = document.querySelector(".display");
 
 display.textContent = displayValue;
 
+const clearbtn = document.querySelector(".clear");
+clearbtn.addEventListener("click", () => {
+  if (displayValue === "0") {
+    return;
+  }
+
+  displayValue = "0";
+  display.textContent = displayValue;
+});
+
 const btn0 = document.querySelector(".button0");
 btn0.addEventListener("click", () => {
   if (displayValue === "0") {
