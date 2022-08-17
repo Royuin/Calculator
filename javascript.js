@@ -103,3 +103,13 @@ btn6.addEventListener("click", () => {
   displayValue += "6";
   display.textContent = displayValue;
 });
+
+const btn7 = document.querySelector(".button7");
+btn7.addEventListener("click", () => {
+  if (displayValue === "0") {
+    displayValue = "";
+  }
+
+  displayValue += "7";
+  display.textContent = displayValue;
+});
