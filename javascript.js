@@ -134,6 +134,6 @@ btn9.addEventListener("click", () => {
   display.textContent = displayValue;
 });
 
-const equalbtn = document.querySelector(".equal");
+const equalBtn = document.querySelector(".equal");
 
 const addBtn = document.querySelector(".add");
