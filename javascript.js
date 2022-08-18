@@ -133,3 +133,5 @@ btn9.addEventListener("click", () => {
   displayValue += "9";
   display.textContent = displayValue;
 });
+
+const equalbtn = document.querySelector(".equal");
