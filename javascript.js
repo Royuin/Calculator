@@ -137,3 +137,10 @@ btn9.addEventListener("click", () => {
 const equalBtn = document.querySelector(".equal");
 
 const addBtn = document.querySelector(".add");
+addBtn.addEventListener("click", () => {
+  operation = {
+    num1: displayValue,
+    operater: addition,
+  };
+  displayValue = "";
+});
