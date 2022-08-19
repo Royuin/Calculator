@@ -138,6 +138,7 @@ const equalBtn = document.querySelector(".equal");
 
 const addBtn = document.querySelector(".add");
 addBtn.addEventListener("click", () => {
+  displayValue = parseInt(displayValue, 10);
   operation = {
     num1: displayValue,
     operater: addition,
@@ -146,6 +147,7 @@ addBtn.addEventListener("click", () => {
 });
 
 equalBtn.addEventListener("click", () => {
+  displayValue = parseInt(displayValue, 10);
   operation.num2 = displayValue;
   displayValue = operate(operation.num1, operation.operater, operation.num2);
   display.textContent = displayValue;
