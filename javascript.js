@@ -144,3 +144,9 @@ addBtn.addEventListener("click", () => {
   };
   displayValue = "";
 });
+
+equalBtn.addEventListener("click", () => {
+  operation.num2 = displayValue;
+  displayValue = operate(operation.num1, operation.operater, operation.num2);
+  display.textContent = displayValue;
+});
