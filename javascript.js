@@ -152,3 +152,13 @@ equalBtn.addEventListener("click", () => {
   displayValue = operate(operation.num1, operation.operater, operation.num2);
   display.textContent = displayValue;
 });
+
+const subtractButton = document.querySelector(".subtract");
+subtractButton.addEventListener("click", () => {
+  displayValue = parseInt(displayValue, 10);
+  operation = {
+    num1: displayValue,
+    operater: subtraction,
+  };
+  displayValue = "";
+});
