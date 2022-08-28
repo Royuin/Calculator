@@ -162,3 +162,13 @@ subtractButton.addEventListener("click", () => {
   };
   displayValue = "";
 });
+
+const multiplyButton = document.querySelector(".multiply");
+multiplyButton.addEventListener("click", () => {
+  displayValue = parseInt(displayValue, 10);
+  operation = {
+    num1: displayValue,
+    operater: multiply,
+  };
+  displayValue = "";
+});
