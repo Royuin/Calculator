@@ -172,3 +172,13 @@ multiplyButton.addEventListener("click", () => {
   };
   displayValue = "";
 });
+
+const divideButton = document.querySelector(".divide");
+divideButton.addEventListener("click", () => {
+  displayValue = parseInt(displayValue, 10);
+  operation = {
+    num1: displayValue,
+    operater: divide,
+  };
+  displayValue = "";
+});
