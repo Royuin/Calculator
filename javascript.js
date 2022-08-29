@@ -147,7 +147,7 @@ addBtn.addEventListener("click", () => {
   displayValue = parseInt(displayValue, 10);
   operation = {
     num1: displayValue,
-    operater: addition,
+    operator: addition,
   };
   displayValue = "";
 });
@@ -157,7 +157,7 @@ subtractButton.addEventListener("click", () => {
   displayValue = parseInt(displayValue, 10);
   operation = {
     num1: displayValue,
-    operater: subtraction,
+    operator: subtraction,
   };
   displayValue = "";
 });
@@ -167,7 +167,7 @@ multiplyButton.addEventListener("click", () => {
   displayValue = parseInt(displayValue, 10);
   operation = {
     num1: displayValue,
-    operater: multiply,
+    operator: multiply,
   };
   displayValue = "";
 });
@@ -177,7 +177,7 @@ divideButton.addEventListener("click", () => {
   displayValue = parseInt(displayValue, 10);
   operation = {
     num1: displayValue,
-    operater: divide,
+    operator: divide,
   };
   displayValue = "";
 });
