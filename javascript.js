@@ -134,6 +134,12 @@ btn9.addEventListener("click", () => {
   display.textContent = displayValue;
 });
 
+let operation = {
+  num1: displayValue,
+  operator: false,
+  num2: displayValue,
+};
+
 const equalBtn = document.querySelector(".equal");
 equalBtn.addEventListener("click", () => {
   displayValue = parseInt(displayValue, 10);
@@ -182,3 +188,7 @@ divideButton.addEventListener("click", () => {
   };
   displayValue = "";
 });
+
+/* 
+
+*/
