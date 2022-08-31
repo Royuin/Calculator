@@ -151,44 +151,31 @@ equalBtn.addEventListener("click", () => {
 const addBtn = document.querySelector(".add");
 addBtn.addEventListener("click", () => {
   displayValue = parseInt(displayValue, 10);
-
-  operation = {
-    num1: displayValue,
-    operator: addition,
-  };
+  operation.num1 = displayValue;
+  operation.operator = addition;
   displayValue = "";
 });
 
 const subtractButton = document.querySelector(".subtract");
 subtractButton.addEventListener("click", () => {
   displayValue = parseInt(displayValue, 10);
-  operation = {
-    num1: displayValue,
-    operator: subtraction,
-  };
+  operation.num1 = displayValue;
+  operation.operator = subtraction;
   displayValue = "";
 });
 
 const multiplyButton = document.querySelector(".multiply");
 multiplyButton.addEventListener("click", () => {
   displayValue = parseInt(displayValue, 10);
-  operation = {
-    num1: displayValue,
-    operator: multiply,
-  };
+  operation.num1 = displayValue;
+  operation.operator = multiply;
   displayValue = "";
 });
 
 const divideButton = document.querySelector(".divide");
 divideButton.addEventListener("click", () => {
   displayValue = parseInt(displayValue, 10);
-  operation = {
-    num1: displayValue,
-    operator: divide,
-  };
+  operation.num1 = displayValue;
+  operation.operator = divide;
   displayValue = "";
 });
-
-/* 
-
-*/
