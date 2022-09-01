@@ -15,7 +15,7 @@ function divide(a, b) {
 }
 
 function operate(a, func, b) {
-  return func(a, b);
+  return (displayValue = func(a, b));
 }
 
 let displayValue = "0";
@@ -29,9 +29,13 @@ clearbtn.addEventListener("click", () => {
   if (displayValue === "0") {
     return;
   }
-
   displayValue = "0";
   display.textContent = displayValue;
+  operation = {
+    num1: displayValue,
+    operator: false,
+    num2: displayValue,
+  };
 });
 
 const btn0 = document.querySelector(".button0");
