@@ -163,7 +163,6 @@ addBtn.addEventListener("click", () => {
     operation.num2 = undefined;
     display.textContent = displayValue;
     displayValue = "";
-    return;
   } else {
     operation.num1 = parseInt(displayValue, 10);
     operation.operator = addition;
@@ -181,7 +180,6 @@ subtractButton.addEventListener("click", () => {
     operation.num2 = undefined;
     display.textContent = displayValue;
     displayValue = "";
-    return;
   } else {
     operation.num1 = parseInt(displayValue, 10);
     operation.operator = subtraction;
