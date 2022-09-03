@@ -173,9 +173,20 @@ addBtn.addEventListener("click", () => {
 
 const subtractButton = document.querySelector(".subtract");
 subtractButton.addEventListener("click", () => {
-  operation.num1 = parseInt(displayValue, 10);
-  operation.operator = subtraction;
-  displayValue = "";
+  if (operation.operator !== undefined) {
+    operation.num2 = parseInt(displayValue, 10);
+    operate(operation.num1, operation.operator, operation.num2);
+    operation.operator = subtraction;
+    operation.num1 = parseInt(displayValue, 10);
+    operation.num2 = undefined;
+    display.textContent = displayValue;
+    displayValue = "";
+    return;
+  } else {
+    operation.num1 = parseInt(displayValue, 10);
+    operation.operator = subtraction;
+    displayValue = "";
+  }
 });
 
 const multiplyButton = document.querySelector(".multiply");
