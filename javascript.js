@@ -33,7 +33,7 @@ clearbtn.addEventListener("click", () => {
   display.textContent = displayValue;
   operation = {
     num1: displayValue,
-    operator: false,
+    operator: undefined,
     num2: displayValue,
   };
 });
@@ -140,7 +140,7 @@ btn9.addEventListener("click", () => {
 
 let operation = {
   num1: displayValue,
-  operator: false,
+  operator: undefined,
   num2: displayValue,
 };
 
