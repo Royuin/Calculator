@@ -173,24 +173,21 @@ addBtn.addEventListener("click", () => {
 
 const subtractButton = document.querySelector(".subtract");
 subtractButton.addEventListener("click", () => {
-  displayValue = parseInt(displayValue, 10);
-  operation.num1 = displayValue;
+  operation.num1 = parseInt(displayValue, 10);
   operation.operator = subtraction;
   displayValue = "";
 });
 
 const multiplyButton = document.querySelector(".multiply");
 multiplyButton.addEventListener("click", () => {
-  displayValue = parseInt(displayValue, 10);
-  operation.num1 = displayValue;
+  operation.num1 = parseInt(displayValue, 10);
   operation.operator = multiply;
   displayValue = "";
 });
 
 const divideButton = document.querySelector(".divide");
 divideButton.addEventListener("click", () => {
-  displayValue = parseInt(displayValue, 10);
-  operation.num1 = displayValue;
+  operation.num1 = parseInt(displayValue, 10);
   operation.operator = divide;
   displayValue = "";
 });
