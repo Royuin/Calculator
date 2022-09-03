@@ -149,15 +149,26 @@ equalBtn.addEventListener("click", () => {
   displayValue = parseInt(displayValue, 10);
   operation.num2 = displayValue;
   displayValue = operate(operation.num1, operation.operator, operation.num2);
+  operation.operator = undefined;
   display.textContent = displayValue;
 });
 
 const addBtn = document.querySelector(".add");
 addBtn.addEventListener("click", () => {
-  displayValue = parseInt(displayValue, 10);
-  operation.num1 = displayValue;
-  operation.operator = addition;
-  displayValue = "";
+  if (operation.operator !== undefined) {
+    operation.num2 = parseInt(displayValue, 10);
+    operate(operation.num1, operation.operator, operation.num2);
+    operation.operator = addition;
+    operation.num1 = parseInt(displayValue, 10);
+    operation.num2 = undefined;
+    display.textContent = displayValue;
+    displayValue = "";
+    return;
+  } else {
+    operation.num1 = parseInt(displayValue, 10);
+    operation.operator = addition;
+    displayValue = "";
+  }
 });
 
 const subtractButton = document.querySelector(".subtract");
