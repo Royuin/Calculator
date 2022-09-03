@@ -139,9 +139,9 @@ btn9.addEventListener("click", () => {
 });
 
 let operation = {
-  num1: displayValue,
+  num1: undefined,
   operator: undefined,
-  num2: displayValue,
+  num2: undefined,
 };
 
 const equalBtn = document.querySelector(".equal");
