@@ -206,7 +206,17 @@ multiplyButton.addEventListener("click", () => {
 
 const divideButton = document.querySelector(".divide");
 divideButton.addEventListener("click", () => {
-  operation.num1 = parseInt(displayValue, 10);
-  operation.operator = divide;
-  displayValue = "";
+  if (operation.operator !== undefined) {
+    operation.num2 = parseInt(displayValue, 10);
+    operate(operation.num1, operation.operator, operation.num2);
+    operation.operator = divide;
+    operation.num1 = parseInt(displayValue, 10);
+    operation.num2 = undefined;
+    display.textContent = displayValue;
+    displayValue = "";
+  } else {
+    operation.num1 = parseInt(displayValue, 10);
+    operation.operator = divide;
+    displayValue = "";
+  }
 });
