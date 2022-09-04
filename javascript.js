@@ -189,9 +189,19 @@ subtractButton.addEventListener("click", () => {
 
 const multiplyButton = document.querySelector(".multiply");
 multiplyButton.addEventListener("click", () => {
-  operation.num1 = parseInt(displayValue, 10);
-  operation.operator = multiply;
-  displayValue = "";
+  if (operation.operator !== undefined) {
+    operation.num2 = parseInt(displayValue, 10);
+    operate(operation.num1, operation.operator, operation.num2);
+    operation.operator = multiply;
+    operation.num1 = parseInt(displayValue, 10);
+    operation.num2 = undefined;
+    display.textContent = displayValue;
+    displayValue = "";
+  } else {
+    operation.num1 = parseInt(displayValue, 10);
+    operation.operator = multiply;
+    displayValue = "";
+  }
 });
 
 const divideButton = document.querySelector(".divide");
