@@ -5,7 +5,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 150px);
-  grid-template-rows: repeat(5, 150px);
+  grid-template-rows: repeat(6, 150px);
   grid-template-areas: "header header header header";
   justify-content: center;
   margin-top: 15em;
@@ -32,4 +32,8 @@ body {
   background-color: rgb(56, 93, 93);
   border: solid 3px cyan;
   color: cyan;
+}
+
+.button0 {
+  grid-column: 1 / 4;
 }
