@@ -43,6 +43,8 @@ clearbtn.addEventListener("click", () => {
 const btn0 = document.querySelector(".button0");
 btn0.addEventListener("click", () => {
   if (displayValue === "0") {
+    displayValue = "";
+  } else if (displayValue.length > 10) {
     return;
   }
 
@@ -54,6 +56,8 @@ const btn1 = document.querySelector(".button1");
 btn1.addEventListener("click", () => {
   if (displayValue === "0") {
     displayValue = "";
+  } else if (displayValue.length > 10) {
+    return;
   }
 
   displayValue += "1";
@@ -64,6 +68,8 @@ const btn2 = document.querySelector(".button2");
 btn2.addEventListener("click", () => {
   if (displayValue === "0") {
     displayValue = "";
+  } else if (displayValue.length > 10) {
+    return;
   }
 
   displayValue += "2";
@@ -74,6 +80,8 @@ const btn3 = document.querySelector(".button3");
 btn3.addEventListener("click", () => {
   if (displayValue === "0") {
     displayValue = "";
+  } else if (displayValue.length > 10) {
+    return;
   }
 
   displayValue += "3";
@@ -84,6 +92,8 @@ const btn4 = document.querySelector(".button4");
 btn4.addEventListener("click", () => {
   if (displayValue === "0") {
     displayValue = "";
+  } else if (displayValue.length > 10) {
+    return;
   }
 
   displayValue += "4";
@@ -94,6 +104,8 @@ const btn5 = document.querySelector(".button5");
 btn5.addEventListener("click", () => {
   if (displayValue === "0") {
     displayValue = "";
+  } else if (displayValue.length > 10) {
+    return;
   }
 
   displayValue += "5";
@@ -104,6 +116,8 @@ const btn6 = document.querySelector(".button6");
 btn6.addEventListener("click", () => {
   if (displayValue === "0") {
     displayValue = "";
+  } else if (displayValue.length > 10) {
+    return;
   }
 
   displayValue += "6";
@@ -114,6 +128,8 @@ const btn7 = document.querySelector(".button7");
 btn7.addEventListener("click", () => {
   if (displayValue === "0") {
     displayValue = "";
+  } else if (displayValue.length > 10) {
+    return;
   }
 
   displayValue += "7";
@@ -124,6 +140,8 @@ const btn8 = document.querySelector(".button8");
 btn8.addEventListener("click", () => {
   if (displayValue === "0") {
     displayValue = "";
+  } else if (displayValue.length > 10) {
+    return;
   }
 
   displayValue += "8";
@@ -134,6 +152,8 @@ const btn9 = document.querySelector(".button9");
 btn9.addEventListener("click", () => {
   if (displayValue === "0") {
     displayValue = "";
+  } else if (displayValue.length > 10) {
+    return;
   }
 
   displayValue += "9";
