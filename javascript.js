@@ -15,7 +15,9 @@ function divide(a, b) {
 }
 
 function operate(a, func, b) {
-  return (displayValue = func(a, b));
+  let num = func(a, b);
+  let result = num.toString();
+  return (displayValue = result.substring(0, 11));
 }
 
 let displayValue = "0";
