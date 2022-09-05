@@ -160,6 +160,12 @@ btn9.addEventListener("click", () => {
   display.textContent = displayValue;
 });
 
+const decimalBtn = document.querySelector(".decimal");
+decimalBtn.addEventListener("click", () => {
+  displayValue += ".";
+  display.textContent = displayValue;
+});
+
 let operation = {
   num1: undefined,
   operator: undefined,
