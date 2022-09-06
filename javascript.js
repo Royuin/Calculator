@@ -180,6 +180,8 @@ negativePositiveBtn.addEventListener("click", () => {
   console.log(displayValue.includes("-"));
   if (displayValue === "0") {
     return;
+  } else if (displayValue.includes("-") === true) {
+    displayValue = displayValue.replace("-", "");
   } else {
     let negative = "-";
     displayValue = negative.concat(displayValue);
