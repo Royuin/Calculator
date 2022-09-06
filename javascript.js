@@ -191,7 +191,7 @@ negativePositiveBtn.addEventListener("click", () => {
 
 const equalBtn = document.querySelector(".equal");
 equalBtn.addEventListener("click", () => {
-  displayValue = parseInt(displayValue, 10);
+  displayValue = Number(displayValue);
   operation.num2 = displayValue;
   displayValue = operate(operation.num1, operation.operator, operation.num2);
   operation.operator = undefined;
@@ -201,15 +201,15 @@ equalBtn.addEventListener("click", () => {
 const addBtn = document.querySelector(".add");
 addBtn.addEventListener("click", () => {
   if (operation.operator !== undefined) {
-    operation.num2 = parseInt(displayValue, 10);
+    operation.num2 = Number(displayValue);
     operate(operation.num1, operation.operator, operation.num2);
     operation.operator = addition;
-    operation.num1 = parseInt(displayValue, 10);
+    operation.num1 = Number(displayValue);
     operation.num2 = undefined;
     display.textContent = displayValue;
     displayValue = "";
   } else {
-    operation.num1 = parseInt(displayValue, 10);
+    operation.num1 = Number(displayValue);
     operation.operator = addition;
     displayValue = "";
   }
@@ -218,15 +218,15 @@ addBtn.addEventListener("click", () => {
 const subtractButton = document.querySelector(".subtract");
 subtractButton.addEventListener("click", () => {
   if (operation.operator !== undefined) {
-    operation.num2 = parseInt(displayValue, 10);
+    operation.num2 = Number(displayValue);
     operate(operation.num1, operation.operator, operation.num2);
     operation.operator = subtraction;
-    operation.num1 = parseInt(displayValue, 10);
+    operation.num1 = Number(displayValue);
     operation.num2 = undefined;
     display.textContent = displayValue;
     displayValue = "";
   } else {
-    operation.num1 = parseInt(displayValue, 10);
+    operation.num1 = Number(displayValue);
     operation.operator = subtraction;
     displayValue = "";
   }
@@ -235,15 +235,15 @@ subtractButton.addEventListener("click", () => {
 const multiplyButton = document.querySelector(".multiply");
 multiplyButton.addEventListener("click", () => {
   if (operation.operator !== undefined) {
-    operation.num2 = parseInt(displayValue, 10);
+    operation.num2 = Number(displayValue);
     operate(operation.num1, operation.operator, operation.num2);
     operation.operator = multiply;
-    operation.num1 = parseInt(displayValue, 10);
+    operation.num1 = Number(displayValue);
     operation.num2 = undefined;
     display.textContent = displayValue;
     displayValue = "";
   } else {
-    operation.num1 = parseInt(displayValue, 10);
+    operation.num1 = Number(displayValue);
     operation.operator = multiply;
     displayValue = "";
   }
@@ -252,15 +252,15 @@ multiplyButton.addEventListener("click", () => {
 const divideButton = document.querySelector(".divide");
 divideButton.addEventListener("click", () => {
   if (operation.operator !== undefined) {
-    operation.num2 = parseInt(displayValue, 10);
+    operation.num2 = Number(displayValue);
     operate(operation.num1, operation.operator, operation.num2);
     operation.operator = divide;
-    operation.num1 = parseInt(displayValue, 10);
+    operation.num1 = Number(displayValue);
     operation.num2 = undefined;
     display.textContent = displayValue;
     displayValue = "";
   } else {
-    operation.num1 = parseInt(displayValue, 10);
+    operation.num1 = Number(displayValue);
     operation.operator = divide;
     displayValue = "";
   }
