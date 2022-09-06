@@ -193,8 +193,9 @@ const equalBtn = document.querySelector(".equal");
 equalBtn.addEventListener("click", () => {
   displayValue = Number(displayValue);
   operation.num2 = displayValue;
-  displayValue = operate(operation.num1, operation.operator, operation.num2);
+  result = operate(operation.num1, operation.operator, operation.num2);
   operation.operator = undefined;
+  displayValue = Number(result).toFixed(2);
   display.textContent = displayValue;
 });
 
