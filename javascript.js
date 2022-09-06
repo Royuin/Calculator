@@ -176,6 +176,16 @@ let operation = {
 };
 
 const negativePositiveBtn = document.querySelector(".negative-positive");
+negativePositiveBtn.addEventListener("click", () => {
+  console.log(displayValue.includes("-"));
+  if (displayValue === "0") {
+    return;
+  } else {
+    let negative = "-";
+    displayValue = negative.concat(displayValue);
+  }
+  display.textContent = displayValue;
+});
 
 const equalBtn = document.querySelector(".equal");
 equalBtn.addEventListener("click", () => {
