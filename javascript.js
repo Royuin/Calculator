@@ -175,6 +175,8 @@ let operation = {
   num2: undefined,
 };
 
+const negativePositiveBtn = document.querySelector(".negative-positive");
+
 const equalBtn = document.querySelector(".equal");
 equalBtn.addEventListener("click", () => {
   displayValue = parseInt(displayValue, 10);
