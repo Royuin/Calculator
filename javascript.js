@@ -193,6 +193,10 @@ const equalBtn = document.querySelector(".equal");
 equalBtn.addEventListener("click", () => {
   displayValue = Number(displayValue);
   operation.num2 = displayValue;
+  if (operation.num2 === 0) {
+    display.textContent = "DENIED";
+    return;
+  }
   result = operate(operation.num1, operation.operator, operation.num2);
   operation.operator = undefined;
   displayValue = Number(result).toFixed(2);
@@ -253,6 +257,9 @@ multiplyButton.addEventListener("click", () => {
 const divideButton = document.querySelector(".divide");
 divideButton.addEventListener("click", () => {
   if (operation.operator !== undefined) {
+    if (operation.num2 === 0) {
+      display.textContent = "No no no";
+    }
     operation.num2 = Number(displayValue);
     operate(operation.num1, operation.operator, operation.num2);
     operation.operator = divide;
