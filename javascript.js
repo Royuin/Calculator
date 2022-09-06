@@ -162,6 +162,9 @@ btn9.addEventListener("click", () => {
 
 const decimalBtn = document.querySelector(".decimal");
 decimalBtn.addEventListener("click", () => {
+  if (displayValue.includes(".") === true) {
+    return;
+  }
   displayValue += ".";
   display.textContent = displayValue;
 });
