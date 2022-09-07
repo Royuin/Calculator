@@ -199,8 +199,9 @@ equalBtn.addEventListener("click", () => {
   }
   displayValue = operate(operation.num1, operation.operator, operation.num2);
   operation.operator = undefined;
-  if (Number.isInteger(displayValue) === true) {
-    displayValue = Number(displayValue).toFixed(2);
+  displayValue = Number(displayValue);
+  if (Number.isInteger(displayValue) === false) {
+    displayValue = displayValue.toFixed(2);
   }
   display.textContent = displayValue;
 });
