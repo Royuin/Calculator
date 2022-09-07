@@ -197,12 +197,13 @@ equalBtn.addEventListener("click", () => {
     display.textContent = "DENIED";
     return;
   }
-  displayValue = operate(operation.num1, operation.operator, operation.num2);
+  result = operate(operation.num1, operation.operator, operation.num2);
   operation.operator = undefined;
-  displayValue = Number(displayValue);
+  displayValue = Number(result);
   if (Number.isInteger(displayValue) === false) {
-    displayValue = displayValue.toFixed(2);
+    result = displayValue.toFixed(2);
   }
+  displayValue = result.toString();
   display.textContent = displayValue;
 });
 
