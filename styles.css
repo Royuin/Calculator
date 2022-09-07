@@ -13,7 +13,7 @@ body {
 }
 
 .display {
-  background-color: white;
+  color: white;
   grid-area: header;
   border-radius: 8px;
   display: flex;
@@ -21,6 +21,7 @@ body {
   align-items: center;
   font-weight: bold;
   font-size: 7em;
+  border: 3px solid cyan;
 }
 
 .button {
@@ -33,7 +34,6 @@ body {
   border: solid 3px cyan;
   color: cyan;
 }
-
 .button0 {
   grid-column: 1 / 4;
 }
