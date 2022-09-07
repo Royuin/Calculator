@@ -47,7 +47,8 @@ body {
 }
 
 .decimal,
-.negative-positive {
+.negative-positive,
+.clear {
   background-color: #3d8a73;
 }
 
