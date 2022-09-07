@@ -27,6 +27,9 @@ body {
 .button {
   font-size: 2.5em;
   border-radius: 8px;
+  color: cyan;
+  background-color: #474747;
+  border: solid 2px cyan;
 }
 
 .button:hover {
@@ -34,6 +37,7 @@ body {
   border: solid 3px cyan;
   color: cyan;
 }
+
 .button0 {
   grid-column: 1 / 4;
 }
