@@ -45,3 +45,8 @@ body {
 .operator {
   background-color: #003f44;
 }
+
+.decimal,
+.negative-positive {
+  background-color: #3d8a73;
+}
