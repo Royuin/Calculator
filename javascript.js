@@ -17,7 +17,7 @@ function divide(a, b) {
 function operate(a, func, b) {
   let num = func(a, b);
   let result = num.toString();
-  return (displayValue = result.substring(0, 11));
+  return (displayValue = result.substring(0, 10));
 }
 
 let displayValue = "0";
@@ -197,9 +197,11 @@ equalBtn.addEventListener("click", () => {
     display.textContent = "DENIED";
     return;
   }
-  result = operate(operation.num1, operation.operator, operation.num2);
+  displayValue = operate(operation.num1, operation.operator, operation.num2);
   operation.operator = undefined;
-  displayValue = Number(result).toFixed(2);
+  if (Number.isInteger(displayValue) === false) {
+    displayValue = Number(displayValue).toFixed(2);
+  }
   display.textContent = displayValue;
 });
 
