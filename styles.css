@@ -50,3 +50,9 @@ body {
 .negative-positive {
   background-color: #3d8a73;
 }
+
+.clear:hover {
+  background-color: #8b0000;
+  color: #e2725b;
+  border: solid 4px #e2725b;
+}
