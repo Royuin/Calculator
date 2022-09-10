@@ -4,11 +4,11 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 150px);
-  grid-template-rows: repeat(6, 150px);
+  grid-template-columns: repeat(4, 125px);
+  grid-template-rows: repeat(6, 125px);
   grid-template-areas: "header header header header";
   justify-content: center;
-  margin-top: 15em;
+  margin-top: 10%;
   gap: 5px;
 }
 
