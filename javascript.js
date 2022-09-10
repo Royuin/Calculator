@@ -278,3 +278,21 @@ divideButton.addEventListener("click", () => {
 });
 
 const numButtons = document.querySelectorAll(".num-button");
+
+function numEventListener() {
+  for (let i = 0; i < numButtons.length; i++) {
+    console.log(numButtons[i]);
+    numButtons[i].addEventListener("click", () => {
+      if (displayValue === "0") {
+        displayValue = "";
+      } else if (displayValue.length > 8) {
+        return;
+      }
+
+      let num = numButtons[i].textContent;
+      displayValue += num.toString();
+      display.textContent = displayValue;
+    });
+  }
+}
+numEventListener();
