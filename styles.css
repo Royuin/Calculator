@@ -4,9 +4,9 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 125px);
-  grid-template-rows: repeat(6, 125px);
-  grid-template-areas: "header header header header";
+  grid-template-columns: repeat(4, 5em);
+  grid-template-rows: repeat(6, 5em);
+  grid-template-areas: 'header header header header';
   justify-content: center;
   margin-top: 10%;
   gap: 5px;
@@ -20,7 +20,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   font-weight: bold;
-  font-size: 7em;
+  font-size: 2.5em;
   border: 3px solid cyan;
 }
 
